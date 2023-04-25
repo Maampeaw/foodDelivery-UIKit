@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foodNinjaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="8cD-BY-Bf3">
+                                <rect key="frame" x="109" y="356.66666666666669" width="175" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="fx0-ZJ-Aod"/>
+                                    <constraint firstAttribute="width" constant="175" id="pKu-z3-rkU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Ninja" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igw-Ca-y3Q">
+                                <rect key="frame" x="95.333333333333329" y="495.66666666666674" width="202.33333333333337" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <color key="textColor" red="0.48627450980392156" green="0.88235294117647056" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deliever Favorite Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqv-6G-9GH">
+                                <rect key="frame" x="108.33333333333333" y="543.66666666666663" width="176.33333333333337" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashPattern" translatesAutoresizingMaskIntoConstraints="NO" id="tLe-Q2-FCX">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="317"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="317" id="Gec-JB-WE5"/>
+                                    <constraint firstAttribute="width" constant="393" id="av5-hI-DCG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8cD-BY-Bf3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="EOb-v9-lyj"/>
+                            <constraint firstItem="tLe-Q2-FCX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Eay-bT-ESF"/>
+                            <constraint firstItem="tLe-Q2-FCX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fcb-d1-9kX"/>
+                            <constraint firstItem="tLe-Q2-FCX" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="NbW-C5-7rT"/>
+                            <constraint firstItem="Igw-Ca-y3Q" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Pc9-b3-Gno"/>
+                            <constraint firstItem="Zqv-6G-9GH" firstAttribute="top" secondItem="Igw-Ca-y3Q" secondAttribute="bottom" id="Tx4-bu-hK6"/>
+                            <constraint firstItem="Zqv-6G-9GH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hd3-UK-Yuu"/>
+                            <constraint firstItem="Igw-Ca-y3Q" firstAttribute="top" secondItem="8cD-BY-Bf3" secondAttribute="bottom" id="kKC-Zn-IOe"/>
+                            <constraint firstItem="8cD-BY-Bf3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="m83-6M-vh6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="foodNinjaLogo" width="175" height="139"/>
+        <image name="splashPattern" width="375" height="317"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -12,7 +12,12 @@
 		0390FA4429F60B9800F91A19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390FA4329F60B9800F91A19 /* ViewController.swift */; };
 		0390FA4729F60B9800F91A19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0390FA4529F60B9800F91A19 /* Main.storyboard */; };
 		0390FA4929F60B9A00F91A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0390FA4829F60B9A00F91A19 /* Assets.xcassets */; };
-		0390FA4C29F60B9A00F91A19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0390FA4A29F60B9A00F91A19 /* LaunchScreen.storyboard */; };
+		0390FA8B29F7D4F000F91A19 /* Viga-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0390FA8A29F7D4F000F91A19 /* Viga-Regular.ttf */; };
+		0390FA9029F7D68A00F91A19 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0390FA8C29F7D68900F91A19 /* Inter-Regular.ttf */; };
+		0390FA9129F7D68A00F91A19 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0390FA8D29F7D68900F91A19 /* Inter-Light.ttf */; };
+		0390FA9229F7D68A00F91A19 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0390FA8E29F7D68900F91A19 /* Inter-SemiBold.ttf */; };
+		0390FA9329F7D68A00F91A19 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0390FA8F29F7D68A00F91A19 /* Inter-Medium.ttf */; };
+		0390FA9729F7E9E700F91A19 /* CustomLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0390FA4A29F60B9A00F91A19 /* CustomLaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +27,13 @@
 		0390FA4329F60B9800F91A19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0390FA4629F60B9800F91A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0390FA4829F60B9A00F91A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0390FA4B29F60B9A00F91A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0390FA4B29F60B9A00F91A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CustomLaunchScreen.storyboard; sourceTree = "<group>"; };
 		0390FA4D29F60B9A00F91A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0390FA8A29F7D4F000F91A19 /* Viga-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Viga-Regular.ttf"; sourceTree = "<group>"; };
+		0390FA8C29F7D68900F91A19 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		0390FA8D29F7D68900F91A19 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		0390FA8E29F7D68900F91A19 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		0390FA8F29F7D68A00F91A19 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		0390FA3E29F60B9800F91A19 /* FoodDelivery-UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				0390FA3F29F60B9800F91A19 /* AppDelegate.swift */,
-				0390FA4129F60B9800F91A19 /* SceneDelegate.swift */,
+				0390FA8829F7D1E800F91A19 /* Assets */,
+				0390FA8729F7D1CC00F91A19 /* Delegate Files */,
 				0390FA4329F60B9800F91A19 /* ViewController.swift */,
 				0390FA4529F60B9800F91A19 /* Main.storyboard */,
-				0390FA4829F60B9A00F91A19 /* Assets.xcassets */,
-				0390FA4A29F60B9A00F91A19 /* LaunchScreen.storyboard */,
+				0390FA4A29F60B9A00F91A19 /* CustomLaunchScreen.storyboard */,
 				0390FA4D29F60B9A00F91A19 /* Info.plist */,
 			);
 			path = "FoodDelivery-UIKit";
+			sourceTree = "<group>";
+		};
+		0390FA8729F7D1CC00F91A19 /* Delegate Files */ = {
+			isa = PBXGroup;
+			children = (
+				0390FA3F29F60B9800F91A19 /* AppDelegate.swift */,
+				0390FA4129F60B9800F91A19 /* SceneDelegate.swift */,
+			);
+			path = "Delegate Files";
+			sourceTree = "<group>";
+		};
+		0390FA8829F7D1E800F91A19 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0390FA8929F7D4D000F91A19 /* Fonts */,
+				0390FA4829F60B9A00F91A19 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0390FA8929F7D4D000F91A19 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0390FA8A29F7D4F000F91A19 /* Viga-Regular.ttf */,
+				0390FA8D29F7D68900F91A19 /* Inter-Light.ttf */,
+				0390FA8F29F7D68A00F91A19 /* Inter-Medium.ttf */,
+				0390FA8C29F7D68900F91A19 /* Inter-Regular.ttf */,
+				0390FA8E29F7D68900F91A19 /* Inter-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +164,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0390FA4C29F60B9A00F91A19 /* LaunchScreen.storyboard in Resources */,
+				0390FA9729F7E9E700F91A19 /* CustomLaunchScreen.storyboard in Resources */,
+				0390FA9029F7D68A00F91A19 /* Inter-Regular.ttf in Resources */,
 				0390FA4929F60B9A00F91A19 /* Assets.xcassets in Resources */,
+				0390FA8B29F7D4F000F91A19 /* Viga-Regular.ttf in Resources */,
+				0390FA9329F7D68A00F91A19 /* Inter-Medium.ttf in Resources */,
+				0390FA9129F7D68A00F91A19 /* Inter-Light.ttf in Resources */,
 				0390FA4729F60B9800F91A19 /* Main.storyboard in Resources */,
+				0390FA9229F7D68A00F91A19 /* Inter-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,12 +199,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0390FA4A29F60B9A00F91A19 /* LaunchScreen.storyboard */ = {
+		0390FA4A29F60B9A00F91A19 /* CustomLaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0390FA4B29F60B9A00F91A19 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = CustomLaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -291,7 +335,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FoodDelivery-UIKit/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = CustomLaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -319,7 +363,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FoodDelivery-UIKit/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = CustomLaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
