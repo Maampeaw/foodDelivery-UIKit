@@ -78,9 +78,9 @@ class OnboardingViewController: BottomButtonVC {
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         switch previousTraitCollection?.userInterfaceStyle{
         case .light:
-            self.heroImage.image = UIImage(named: "darkHeroImage1")
+            self.heroImage.image = self.onboardState == .begin ? UIImage(named: "darkHeroImage1") : UIImage(named: "darkHeroImage2")
         case .dark:
-            self.heroImage.image = UIImage(named: "heroImage1")
+            self.heroImage.image = self.onboardState == .begin ? UIImage(named: "heroImage1") : UIImage(named: "heroImage2")
         default:
             break
         }
@@ -122,6 +122,7 @@ class OnboardingViewController: BottomButtonVC {
 
 
 extension OnboardingViewController{
+    
     func beginOnboarding(){
         UIView.transition(with: self.heroImage, duration: 0.1) {
             self.heroImage.alpha = 0
@@ -138,4 +139,5 @@ extension OnboardingViewController{
             }
         }
     }
+    
 }
