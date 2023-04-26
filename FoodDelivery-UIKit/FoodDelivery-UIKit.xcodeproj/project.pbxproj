@@ -12,6 +12,14 @@
 		0302175D29F829C10093594B /* UIViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0302175C29F829C10093594B /* UIViewController+ext.swift */; };
 		0302175F29F845430093594B /* BottomButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0302175E29F845430093594B /* BottomButtonVC.swift */; };
 		0302176129F858BA0093594B /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0302176029F858BA0093594B /* UIView+Ext.swift */; };
+		0309E83429F912DD000CE90F /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309E83329F912DD000CE90F /* LogoView.swift */; };
+		0309E83629F91588000CE90F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309E83529F91588000CE90F /* Colors.swift */; };
+		0309E83C29F91940000CE90F /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309E83B29F91940000CE90F /* SignInVC.swift */; };
+		0309E83E29F936B3000CE90F /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309E83D29F936B3000CE90F /* UILabel+Ext.swift */; };
+		0309E84029F936E2000CE90F /* MyCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309E83F29F936E2000CE90F /* MyCustomTextField.swift */; };
+		0309E84229F9412C000CE90F /* ButtonLikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309E84129F9412C000CE90F /* ButtonLikeView.swift */; };
+		031443E929F967D70092FE85 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031443E829F967D70092FE85 /* SignInModel.swift */; };
+		031443EB29F968250092FE85 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031443EA29F968250092FE85 /* SignInViewModel.swift */; };
 		0390FA4029F60B9800F91A19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390FA3F29F60B9800F91A19 /* AppDelegate.swift */; };
 		0390FA4229F60B9800F91A19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390FA4129F60B9800F91A19 /* SceneDelegate.swift */; };
 		0390FA4729F60B9800F91A19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0390FA4529F60B9800F91A19 /* Main.storyboard */; };
@@ -30,6 +38,14 @@
 		0302175C29F829C10093594B /* UIViewController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ext.swift"; sourceTree = "<group>"; };
 		0302175E29F845430093594B /* BottomButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButtonVC.swift; sourceTree = "<group>"; };
 		0302176029F858BA0093594B /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		0309E83329F912DD000CE90F /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		0309E83529F91588000CE90F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0309E83B29F91940000CE90F /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		0309E83D29F936B3000CE90F /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		0309E83F29F936E2000CE90F /* MyCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTextField.swift; sourceTree = "<group>"; };
+		0309E84129F9412C000CE90F /* ButtonLikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLikeView.swift; sourceTree = "<group>"; };
+		031443E829F967D70092FE85 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		031443EA29F968250092FE85 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		0390FA3C29F60B9800F91A19 /* FoodDelivery-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoodDelivery-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0390FA3F29F60B9800F91A19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0390FA4129F60B9800F91A19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				0302175729F828160093594B /* Strings.swift */,
-				0302175E29F845430093594B /* BottomButtonVC.swift */,
+				0309E83529F91588000CE90F /* Colors.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -77,8 +93,54 @@
 			children = (
 				0302175C29F829C10093594B /* UIViewController+ext.swift */,
 				0302176029F858BA0093594B /* UIView+Ext.swift */,
+				0309E83D29F936B3000CE90F /* UILabel+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0309E83229F912A8000CE90F /* General Components */ = {
+			isa = PBXGroup;
+			children = (
+				0302175E29F845430093594B /* BottomButtonVC.swift */,
+				0309E83329F912DD000CE90F /* LogoView.swift */,
+				0309E83F29F936E2000CE90F /* MyCustomTextField.swift */,
+				0309E84129F9412C000CE90F /* ButtonLikeView.swift */,
+			);
+			path = "General Components";
+			sourceTree = "<group>";
+		};
+		0309E83729F9186D000CE90F /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				0309E83A29F9191D000CE90F /* ViewModel */,
+				0309E83929F91914000CE90F /* View */,
+				0309E83829F9190E000CE90F /* Model */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		0309E83829F9190E000CE90F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				031443E829F967D70092FE85 /* SignInModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0309E83929F91914000CE90F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0309E83B29F91940000CE90F /* SignInVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0309E83A29F9191D000CE90F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				031443EA29F968250092FE85 /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		0390FA3329F60B9800F91A19 = {
@@ -100,6 +162,8 @@
 		0390FA3E29F60B9800F91A19 /* FoodDelivery-UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				0309E83729F9186D000CE90F /* Registration */,
+				0309E83229F912A8000CE90F /* General Components */,
 				0302175B29F829A70093594B /* Extensions */,
 				0302175629F828090093594B /* Helpers */,
 				0302175529F827E70093594B /* Onboarding */,
@@ -219,12 +283,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0390FA4029F60B9800F91A19 /* AppDelegate.swift in Sources */,
+				0309E83E29F936B3000CE90F /* UILabel+Ext.swift in Sources */,
+				0309E83629F91588000CE90F /* Colors.swift in Sources */,
+				031443E929F967D70092FE85 /* SignInModel.swift in Sources */,
 				0302175F29F845430093594B /* BottomButtonVC.swift in Sources */,
 				0302175A29F828EB0093594B /* OnboardingViewController.swift in Sources */,
+				0309E83C29F91940000CE90F /* SignInVC.swift in Sources */,
 				0302175D29F829C10093594B /* UIViewController+ext.swift in Sources */,
 				0302176129F858BA0093594B /* UIView+Ext.swift in Sources */,
+				0309E84029F936E2000CE90F /* MyCustomTextField.swift in Sources */,
+				0309E83429F912DD000CE90F /* LogoView.swift in Sources */,
+				0309E84229F9412C000CE90F /* ButtonLikeView.swift in Sources */,
 				0302175829F828160093594B /* Strings.swift in Sources */,
 				0390FA4229F60B9800F91A19 /* SceneDelegate.swift in Sources */,
+				031443EB29F968250092FE85 /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

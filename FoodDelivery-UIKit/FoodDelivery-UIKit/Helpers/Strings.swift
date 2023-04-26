@@ -14,4 +14,10 @@ final class Strings{
     static let onboardingDescription2 = "Enjoy a fast and smooth food delivery at your doorstep"
     static let next = "Next"
     static let enjoyFood   =   "Enjoy a fast and smooth food delivery at \nyour doorstep"
+    static let foodNinja = "Food Ninja"
+    static let logoSubtitle = "Deliever Favorite Food"
+    static let loginTitle = "Login To Your Account"
+    static let continueWith = "Or Continue With"
+    static let forgotPassword = "forgot your password?"
+    
 }

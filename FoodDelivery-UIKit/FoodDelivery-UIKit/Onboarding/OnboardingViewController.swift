@@ -20,7 +20,7 @@ class OnboardingViewController: BottomButtonVC {
             case .continueOnboard:
                 beginOnboarding()
             case .gotoSignIn:
-                print("sign in here")
+                gotoSignIn()
             default:
                 print("here I am")
             }
@@ -138,6 +138,13 @@ extension OnboardingViewController{
                 self.heroDescriptionLabel.alpha = 1
             }
         }
+    }
+    
+    func gotoSignIn(){
+        let viewController = SignInVC()
+        viewController.modalPresentationStyle = .overFullScreen
+        viewController.modalTransitionStyle = .crossDissolve
+        self.present(viewController, animated: true)
     }
     
 }
