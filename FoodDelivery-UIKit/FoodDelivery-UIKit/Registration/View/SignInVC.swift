@@ -9,6 +9,12 @@ import UIKit
 
 class SignInVC: BottomButtonVC {
     
+    lazy var signInViewModel: SignInViewModel = {
+        let vm = SignInViewModel()
+        vm.delegate = self
+        return vm
+    }()
+    
     let patternImage: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -158,13 +164,26 @@ class SignInVC: BottomButtonVC {
     }
     
     override func buttonAction() {
-        print("this is what will be called")
+        signInViewModel.signInUser(email: emailTextfield.text ?? "", password: passwordTextfield.text ?? "")
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     
+}
 
+extension SignInVC: SignInDelegate{
+    
+    func signInUser() {
+        let viewController = HomeViewController()
+        viewController.modalPresentationStyle = .overFullScreen
+        viewController.modalTransitionStyle = .crossDissolve
+        self.present(viewController, animated: true)
+    }
+    
+    func signInFailure() {
+        self.showAlert(title: "Login Failed", message: "Email or Password may be incorrect please check", button: "Ok")
+    }
     
 }

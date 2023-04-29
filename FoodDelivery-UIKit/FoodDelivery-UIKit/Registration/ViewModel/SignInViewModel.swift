@@ -8,10 +8,18 @@
 import Foundation
 
 class SignInViewModel{
-    
+    var delegate: SignInDelegate?
+    func signInUser(email: String, password: String){
+        if email == "mark@email.com" && password == "password"{
+            delegate?.signInUser()
+        }else{
+            delegate?.signInFailure()
+        }
+    }
 }
 
 
-@objc protocol signInDelegate{
-    @objc optional func signInUser()
+ protocol SignInDelegate{
+    func signInUser()
+    func signInFailure()
 }

@@ -20,6 +20,8 @@
 		0309E84229F9412C000CE90F /* ButtonLikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309E84129F9412C000CE90F /* ButtonLikeView.swift */; };
 		031443E929F967D70092FE85 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031443E829F967D70092FE85 /* SignInModel.swift */; };
 		031443EB29F968250092FE85 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031443EA29F968250092FE85 /* SignInViewModel.swift */; };
+		031443F329F96DC80092FE85 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031443F229F96DC80092FE85 /* HomeViewController.swift */; };
+		0380CF1D29FA9B8400A4981B /* BottomMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380CF1C29FA9B8400A4981B /* BottomMenuBar.swift */; };
 		0390FA4029F60B9800F91A19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390FA3F29F60B9800F91A19 /* AppDelegate.swift */; };
 		0390FA4229F60B9800F91A19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390FA4129F60B9800F91A19 /* SceneDelegate.swift */; };
 		0390FA4729F60B9800F91A19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0390FA4529F60B9800F91A19 /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 		0309E84129F9412C000CE90F /* ButtonLikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLikeView.swift; sourceTree = "<group>"; };
 		031443E829F967D70092FE85 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		031443EA29F968250092FE85 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		031443F229F96DC80092FE85 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0380CF1C29FA9B8400A4981B /* BottomMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuBar.swift; sourceTree = "<group>"; };
 		0390FA3C29F60B9800F91A19 /* FoodDelivery-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoodDelivery-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0390FA3F29F60B9800F91A19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0390FA4129F60B9800F91A19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 				0309E83329F912DD000CE90F /* LogoView.swift */,
 				0309E83F29F936E2000CE90F /* MyCustomTextField.swift */,
 				0309E84129F9412C000CE90F /* ButtonLikeView.swift */,
+				0380CF1C29FA9B8400A4981B /* BottomMenuBar.swift */,
 			);
 			path = "General Components";
 			sourceTree = "<group>";
@@ -143,6 +148,38 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		031443EC29F96D7C0092FE85 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				031443EF29F96D9D0092FE85 /* Model */,
+				031443EE29F96D940092FE85 /* ViewModel */,
+				031443ED29F96D870092FE85 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		031443ED29F96D870092FE85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				031443F229F96DC80092FE85 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		031443EE29F96D940092FE85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		031443EF29F96D9D0092FE85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0390FA3329F60B9800F91A19 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +199,7 @@
 		0390FA3E29F60B9800F91A19 /* FoodDelivery-UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				031443EC29F96D7C0092FE85 /* Home */,
 				0309E83729F9186D000CE90F /* Registration */,
 				0309E83229F912A8000CE90F /* General Components */,
 				0302175B29F829A70093594B /* Extensions */,
@@ -284,6 +322,7 @@
 			files = (
 				0390FA4029F60B9800F91A19 /* AppDelegate.swift in Sources */,
 				0309E83E29F936B3000CE90F /* UILabel+Ext.swift in Sources */,
+				0380CF1D29FA9B8400A4981B /* BottomMenuBar.swift in Sources */,
 				0309E83629F91588000CE90F /* Colors.swift in Sources */,
 				031443E929F967D70092FE85 /* SignInModel.swift in Sources */,
 				0302175F29F845430093594B /* BottomButtonVC.swift in Sources */,
@@ -293,6 +332,7 @@
 				0302176129F858BA0093594B /* UIView+Ext.swift in Sources */,
 				0309E84029F936E2000CE90F /* MyCustomTextField.swift in Sources */,
 				0309E83429F912DD000CE90F /* LogoView.swift in Sources */,
+				031443F329F96DC80092FE85 /* HomeViewController.swift in Sources */,
 				0309E84229F9412C000CE90F /* ButtonLikeView.swift in Sources */,
 				0302175829F828160093594B /* Strings.swift in Sources */,
 				0390FA4229F60B9800F91A19 /* SceneDelegate.swift in Sources */,

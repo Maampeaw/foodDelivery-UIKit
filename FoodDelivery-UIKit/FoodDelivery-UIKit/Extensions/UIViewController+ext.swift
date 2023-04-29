@@ -19,4 +19,11 @@ extension UIViewController{
             return lightMode
         }
     }
+    
+    func showAlert(title: String, message: String, button: String){
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: button, style: .default)
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true)
+    }
 }
