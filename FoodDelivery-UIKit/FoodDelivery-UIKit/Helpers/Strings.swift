@@ -19,5 +19,6 @@ final class Strings{
     static let loginTitle = "Login To Your Account"
     static let continueWith = "Or Continue With"
     static let forgotPassword = "forgot your password?"
+    static let findFavoriteFood = "Find Your \nFavorite Food"
     
 }

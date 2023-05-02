@@ -176,7 +176,7 @@ class SignInVC: BottomButtonVC {
 extension SignInVC: SignInDelegate{
     
     func signInUser() {
-        let viewController = HomeViewController()
+        let viewController = UINavigationController(rootViewController: HomeViewController())
         viewController.modalPresentationStyle = .overFullScreen
         viewController.modalTransitionStyle = .crossDissolve
         self.present(viewController, animated: true)
